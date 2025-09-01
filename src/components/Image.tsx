@@ -1,4 +1,9 @@
-const Image = ({ image, name }) => {
+type data ={
+    image:string,
+    name:string
+}
+
+const Image = ({ image, name }:data) => {
 return (
 <div>
 <img src={image} alt={name} className="w-full h-40 object-contain" />

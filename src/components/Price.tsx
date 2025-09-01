@@ -1,5 +1,9 @@
+type data = {
+  starCount:number,
+  price:string
+}
 
-const Price = ({ starCount, price }) => {
+const Price = ({ starCount, price }:data) => {
   return (
     <div className="mt-2">
       <div className="flex items-center gap-1 text-yellow-500 text-sm">
@@ -10,7 +14,7 @@ const Price = ({ starCount, price }) => {
       </div>
 
       <div className="mt-1 flex items-center gap-2">
-        <span className="line-through text-gray-400 text-sm">$140.00</span>
+        <span className="line-through text-gray-400 text-sm">₹14,000</span>
         <span className="text-gray-800 font-semibold">{price}</span>
       </div>
     </div>
